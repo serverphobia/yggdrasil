@@ -2,6 +2,12 @@
 
 <div align="center">A Dockerfile for your Open Ragnarok Dedicated Server</div>
 
+### Roadmap
+
+- [x] Learn how to run a basic server;
+- [x] Setup initial commands and inital configuration;
+- [ ] Create script to maintenance mode and restart server.
+
 ### Desired Features
 
 - [ ] Server setup via parametrization
