@@ -1,7 +1,7 @@
 #!/bin/bash
 
 HOST=""
-SERVER_DIR=~hercules
+SERVER_DIR=~/hercules
 LOGIN_SERVER=login_server
 CHAR_SERVER=char_server
 MAP_SERVER=map_server
