@@ -13,6 +13,7 @@
 - [ ] Script to allow usage of metadata instead of manually starting containers; //check gcp-metadata;
 - [ ] Start-up script to download, install and start content;
 - [ ] Create the instance using yaml;
+- [x] Shutdown script;
 
 ### Desired Features
 
