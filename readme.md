@@ -7,7 +7,7 @@
 - [x] Learn how to run a basic server;
 - [x] Setup initial commands and inital configuration;
 - [ ] Create script to maintenance mode and restart server.
-- [ ] Allow usage of MariaDB docker image;
+- [x] Allow usage of MariaDB docker image (uses as default);
 - [ ] Automatized solution to backup;
 - [ ] Automatized solution to restore backup;
 - [ ] Script to allow usage of metadata instead of manually starting containers; //check gcp-metadata;
@@ -40,3 +40,16 @@ You can run the database with:
 ```
 
 
+sudo apt-get update && sudo apt-get install -y git docker-ce gcc make libmysqlclient-dev zlib1g-dev libpcre3-dev mysql-server
+
+if you have any dump, you can scp your dump to your vm using:
+
+gcloud compute scp hercules.sql ragnarok-1:~/
+
+sudo apt-get install screen nano
+
+alterar os ips para o ip fixo
+
+### Obsevations:
+
+- We use MariaDB over MySQL because of lower memory usage initial setup out-of-box, this way you don't need to worry about setting extra configuration to MySQL.

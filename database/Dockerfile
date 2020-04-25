@@ -1,4 +1,4 @@
-FROM mysql:5.6
+FROM mariadb
 
 MAINTAINER Nícolas 'eowfenth' Deçordi <www.github.com/eowfenth>
 
