@@ -53,3 +53,9 @@ alterar os ips para o ip fixo
 ### Obsevations:
 
 - We use MariaDB over MySQL because of lower memory usage initial setup out-of-box, this way you don't need to worry about setting extra configuration to MySQL.
+
+### Shutting the server down
+
+If your host provider have some kind of API to shutdown your machine, you can use the shutdown script, located at `scripts/shutdown.sh`.
+
+In this script you can define a lot of variables as such names of your servers, your host provider, your hercules path and even your container name's database.

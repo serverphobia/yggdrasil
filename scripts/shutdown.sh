@@ -9,7 +9,7 @@ DEFAULT_DB_CONTAINER=yggdrasil-db
 
 cd $SERVER_DIR
 
-# Server Guard to check wheter it is running;
+# Server Guard to check whether your server is running;
 if [[ \
     -e .$LOGIN_SERVER.pid || \
     -e .$CHAR_SERVER.pid || \
@@ -22,6 +22,7 @@ then
     echo "Server is not running."
 fi
 
+# Checks for metadata in your Google Compute Engine instance;
 if [ $HOST == "gcp" ]; then
     METADATA_URL="http://metadata.google.internal/computeMetadata/v1/instance/attributes/"
     METADATA_HEADER='-H "Metadata-Flavor: Google"'
@@ -33,6 +34,7 @@ if [ $HOST == "gcp" ]; then
     fi
 fi
 
+# Server Guard to check whether your database is running;
 if [ "$(docker ps -q -f name=$SERVER_DB_CONTAINER)" ];
 then
     echo "Database is running. Shutting it down..."
