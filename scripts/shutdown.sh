@@ -16,7 +16,7 @@ if [[ \
     -e .$MAP_SERVER.pid 
 ]];
 then
-    echo "Server is running. Shutting it down";
+    echo "Server is running. Shutting it down...";
     ./athena-start stop
  else
     echo "Server is not running."
